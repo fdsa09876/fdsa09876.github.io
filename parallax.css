@@ -1,0 +1,58 @@
+.container header{  
+    font-family: 'Merriweather', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+    max-width: 80%;
+    position: relative;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%)  ; 
+
+    font-size:30px;
+    color:rgba(207, 204, 204, 0.6); 
+}
+a{
+    text-decoration: none;
+    color: rgba(207, 204, 204, 0.6);
+}
+
+h1:hover{
+transform: translate(10%);
+transition-duration: 1s;
+}
+h1:not(:hover){
+    transition-duration: 1s;
+    }
+.container header h1:after{ 
+    content:'';
+    border-bottom: 1px solid rgba(207, 204, 204, 0.6);
+    display: block;
+    margin:10px 0 10px 0;
+}
+.container{
+    background-size: cover;
+    height: 100vh; 
+    background-attachment: fixed;    
+}
+.one {
+    background-image: url(one.jpg);
+}
+.two{
+    background-image: url(two.jpg);
+}
+.three{
+    background-image: url(three.jpg);
+}
+.four{
+    background-image: url(four.jpg);
+}
+
+.one header h1:after{
+    width:170px;
+}.two header h1:after{
+    width:170px;
+}.three header h1:after{
+    width:115px;
+}.four header h1:after{
+    width:195px;
+}
